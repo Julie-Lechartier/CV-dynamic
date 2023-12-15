@@ -1,33 +1,136 @@
 body{
-    font-family: 'Raleway', sans-serif;
-    
-}
-body{
-    display:flex;
-
-}
-img{
-    width:150px;
-}
-
-.nomImg{
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 300px;
+    margin-right: 300px;
+    background: #ff7e86;
+    background-image: linear-gradient(45deg, #fc5762, transparent 90%),
+        radial-gradient(#ff1122 68%, transparent 5%);
+    background-size: 4em 4em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #E3EDF3;
-    width:250px;
-    border-radius: 20px 20px 20px 20px;;
-
 }
-li{
-    list-style: none;
-    margin-bottom: 10px;
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color:#ffc8c8;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow:1px 1px 1px 1px rgba(128, 128, 128, 0.49) ;
 }
-
 main{
-    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.perso{
+    font-size: 14px;
+    padding:20px;
+    background-color: #ffc8c8;
+    border-radius: 0px 1px 0px 20px;
+    box-shadow: 1px 3px 1px 1px rgba(128, 128, 128, 0.49);
 }
 
-section >  .competence {
-    color: aquamarine;
+.pro{
+    color:#ffffff;
+    background-color: #54545488;
+    display: flex;
+    flex-direction: column;
+    padding-left:40px ;
+    padding-top: 20px;
+    
+}
+
+.perso > h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+button {
+    margin-top: 50px;
+    margin-right: 20px;
+    padding: 0.1em 0.25em;
+    width: 10em;
+    height: 4.2em;
+    background-color: #21212194;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+  }
+  
+button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 6.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+  
+button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+  
+button span:not(hover) {
+    transition: all 1s;
+}
+  
+@media screen and (max-width:1200px) and (orientation:portrait){
+
+    body{
+        margin: 0;
+    }
+    header > .titre {
+        font-size: 11px;
+    }
+
+    button{
+        margin-top: 35px;
+        margin-right: 40px;
+        width:8em;
+    }
+    button span{
+        width: 4.85em;
+    }
+    .perso{
+        font-size: 10px;
+    }
+    .perso > h3{
+        font-size: 15px;
+    }
+    .pro{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:1380px) and (orientation:landscape){
+
+    body{
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width:850px) and (orientation:landscape){
+    body{
+        margin:20px;
+    }
+    header{
+        font-size: 12px;
+    }
+
 }
