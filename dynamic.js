@@ -121,29 +121,29 @@ class periode01{
 
 // travail 2 
 
-class titrePro2{
+class titrePro02{
     constructor(titrePro2){
         this.titrePro2 = titrePro2
     }
 }
 
-class entreprise2{
+class entreprise02{
     constructor(entreprise2){
         this.entreprise2 = entreprise2
     }
 }
 
-class lieu2{
+class lieu02{
     constructor(lieu2){
         this.lieu2 = lieu2
     }
 } 
-class poste2{
+class poste02{
     constructor(poste2){
         this.poste2 = poste2
     }
 }
-class periode2{
+class periode02{
     constructor(periode2){
         this.periode2 = periode2
     }
@@ -151,29 +151,29 @@ class periode2{
 
 
 //travail 3
-class titrePro3{
+class titrePro03{
     constructor(titrePro3){
         this.titrePro3 = titrePro3
     }
 }
 
-class entreprise3{
+class entreprise03{
     constructor(entreprise3){
         this.entreprise3 = entreprise3
     }
 }
 
-class lieu3{
+class lieu03{
     constructor(lieu3){
         this.lieu3 = lieu3
     }
 } 
-class poste3{
+class poste03{
     constructor(poste3){
         this.poste3 = poste3
     }
 }
-class periode3{
+class periode03{
     constructor(periode3){
         this.periode3 = periode3
     }
@@ -227,26 +227,40 @@ for (i=0; i<listSS.length; i++){
 
 
 
-
+//expérience pro
 
 const us1TitrePro1 = new titrePro01("Vente")
 const us1Entreprise1 = new entreprise01("Carrefour")
 const us1Lieu1 = new lieu01("Lyon")
 const us1Poste1 = new poste01("tennue de caisse")
 const us1Periode1 = new periode01("12 décemnbre au 15 Janvier 2021")
-const us1TitrePro2 = new titrePro2("Vente")
-const us1Entreprise2 = new entreprise2("Zara")
-const us1Lieu2 = new lieu2("Lyon")
-const us1Poste2 = new poste2("Conseille de vente")
-const us1Periode2 = new periode2("Juin - Aout 2022")
-const us1TitrePro3 = new titrePro3("Boulangerie")
-const us1Entreprise3 = new entreprise3("Painaulait")
-const us1Lieu3 = new lieu3("Villeurbanne")
-const us1Poste3 = new poste3("Vente")
-const us1Periode3 = new periode3("Septembre 2023")
+const us1TitrePro2 = new titrePro02("Vente")
+const us1Entreprise2 = new entreprise02("Zara")
+const us1Lieu2 = new lieu02("Lyon")
+const us1Poste2 = new poste02("Conseille de vente")
+const us1Periode2 = new periode02("Juin - Aout 2022")
+const us1TitrePro3 = new titrePro03("Boulangerie")
+const us1Entreprise3 = new entreprise03("Painaulait")
+const us1Lieu3 = new lieu03("Villeurbanne")
+const us1Poste3 = new poste03("Vente")
+const us1Periode3 = new periode03("Septembre 2023")
 
 
 document.getElementById("titrePro001").innerHTML = us1TitrePro1.titrePro1
 document.getElementById("Entreprise001").innerHTML = us1Entreprise1.entreprise1
 document.getElementById("lieu001").innerText = us1Lieu1.lieu1
 document.getElementById("poste001").innerHTML = us1Poste1.poste1
+document.getElementById("periode001").innerHTML = us1Periode1.periode1
+document.getElementById("titrePro002").innerHTML = us1TitrePro2.titrePro2
+document.getElementById("Entreprise002").innerHTML = us1Entreprise2.entreprise2
+document.getElementById("lieu002").innerHTML = us1Lieu2.lieu2
+document.getElementById("poste002").innerHTML = us1Poste2.poste2
+document.getElementById("periode002").innerHTML = us1Periode2.periode2
+document.getElementById("titrePro003").innerHTML = us1TitrePro3.titrePro3
+document.getElementById("Entreprise003").innerHTML = us1Entreprise3.titrePro3
+document.getElementById("lieu003").innerHTML = us1Lieu3.lieu3
+document.getElementById("poste003").innerHTML = us1Poste3.poste3
+document.getElementById("periode003").innerHTML = us1Periode3.periode3
+
+
+//formation
