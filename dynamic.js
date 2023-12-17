@@ -1,3 +1,29 @@
+class titreDuCV{
+    constructor(unTitre){
+        this.unTitre = unTitre
+    }
+}
+
+const us1titreCV = new titreDuCV("Ingénieur Aérodynamique")
+document.getElementById("titreCV").innerHTML = us1titreCV.unTitre
+
+class aProposCV{
+    constructor(propos){
+        this.propos = propos
+    }
+}
+const us1propos = new aProposCV("Recherche Alternance")
+document.getElementById("aPropos").innerHTML = us1propos.propos
+
+class nomPrenomCV{
+    constructor(personne){
+        this.personne = personne
+    }
+}
+const us1nomPrenom = new nomPrenomCV("Henri Petit")
+document.getElementById("nomPrenom").innerHTML = us1nomPrenom.personne
+
+
 //Partie Perso
 class mail{
     constructor(unMail){
@@ -194,7 +220,7 @@ const us1Lang2 = new Lang2 ("Français")
 const us1Ss1 = new Ss1("Motivé")
 const us1Ss2 = new Ss2("Curieux")
 const us1Ss3 = new Ss3("Adaptable")
-const us1Ss4 = new Ss4("Concessieux")
+const us1Ss4 = new Ss4("Concienssieux")
 
 
 let listContact = [us1Mail.unMail, us1Address.uneAdsress, us1Tel.num,];
@@ -264,3 +290,45 @@ document.getElementById("periode003").innerHTML = us1Periode3.periode3
 
 
 //formation
+//autre méthode class et const
+class nomFormation{
+    constructor(nomForma){
+        this.nomForma = nomForma
+    }
+}
+
+class lieuFormation{
+    constructor(lieuForma){
+        this.lieuForma = lieuForma
+    }
+}
+
+class dateFormation{
+    constructor(dateForma){
+        this.dateForma = dateForma
+    }
+}
+class autreInfo{
+    constructor(autre){
+        this.autre = autre
+    }
+}
+
+const us1nomForma1 = new nomFormation("Ecole d'ingénieur aérodynamique")
+const us1lieuForma1 = new lieuFormation("Villeurbanne")
+const us1dateForma1 = new dateFormation("2021 - 2024")
+
+
+const us1nomForma2 = new nomFormation("BAC S")
+const us1lieuForma2 = new lieuFormation("Villeurbanne")
+const us1dateForma2 = new dateFormation("2020")
+const us1autre2 = new autreInfo("option physique chimie")
+
+document.getElementById("nomFor1").innerHTML = us1nomForma1.nomForma
+document.getElementById("lieufor1").innerHTML = us1lieuForma1.lieuForma
+document.getElementById("quandfor1").innerHTML = us1dateForma1.dateForma
+
+document.getElementById("nomFor2").innerHTML = us1nomForma2.nomForma
+document.getElementById("lieufor2").innerHTML = us1lieuForma2.lieuForma
+document.getElementById("quandfor2").innerHTML = us1dateForma2.dateForma
+document.getElementById("autre2").innerHTML = us1autre2.autre

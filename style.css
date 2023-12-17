@@ -33,6 +33,9 @@ main{
 .perso > h3{
     margin-bottom: 0;
 }
+.nomPrenom{
+    font-weight: bold;
+}
 
 .pro{
     width:100%;
