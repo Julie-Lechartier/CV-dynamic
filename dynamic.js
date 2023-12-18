@@ -1,3 +1,15 @@
+//changer couleur du CV
+function changeCV(color) { 
+    document.body.style.background = color; 
+}
+
+
+
+
+
+
+
+//insertion de texte avec JS
 class titreDuCV{
     constructor(unTitre){
         this.unTitre = unTitre
@@ -45,72 +57,30 @@ class tel{
 
 
 // Partie Compétence
-class compt01{
-    constructor(compt1){
-        this.compt1 = compt1;
-    }
-}
-
-class compt02{
-    constructor(compt2){
-        this.compt2 = compt2;
-    }
-}
-class compt03{
-    constructor(compt3){
-        this.compt3 = compt3;
-
-    }
-}
-
-class compt04{
-    constructor(compt4){
-        this.compt4 = compt4;
-
+class compétence{
+    constructor(compt){
+        this.compt = compt;
     }
 }
 
 
 //Partie Langue
 
-class Lang1{
-    constructor(Lang1){
-        this.Lang1 = Lang1
-    }
-
-}
-class Lang2{
-    constructor(Lang2){
-        this.Lang2 = Lang2
+class Langue{
+    constructor(Lang){
+        this.Lang = Lang
     }
 
 }
 
 //Partie Soft Skill
 
-class Ss1{
-    constructor(Ss1){
-        this.Ss1 = Ss1
+class softSkill{
+    constructor(ss){
+        this.ss = ss
     }
 }
 
-class Ss2{
-    constructor(Ss2){
-        this.Ss2 = Ss2
-    }
-}
-
-class Ss3{
-    constructor(Ss3){
-        this.Ss3 = Ss3
-    }
-}
-
-class Ss4{
-    constructor(Ss4){
-        this.Ss4 = Ss4
-    }
-}
 
 
 //Partie Expérience professionnel
@@ -211,16 +181,16 @@ const us1Mail = new mail("Henri.petit@sfr.fr")
 const us1Address = new address("Villeurbanne, Lyon")
 const us1Tel = new tel("06 05 07 81 50")
 
-const us1Compt1 = new compt01 ("HTML")
-const us1Compt2 = new compt02 ("CSS")
-const us1Compt3 = new compt03 ("Python")
-const us1Compt4 = new compt04 ("C")
-const us1Lang1 = new Lang1 ("Anglais")
-const us1Lang2 = new Lang2 ("Français")
-const us1Ss1 = new Ss1("Motivé")
-const us1Ss2 = new Ss2("Curieux")
-const us1Ss3 = new Ss3("Adaptable")
-const us1Ss4 = new Ss4("Concienssieux")
+const us1Compt1 = new compétence ("HTML")
+const us1Compt2 = new compétence ("CSS")
+const us1Compt3 = new compétence ("Python")
+const us1Compt4 = new compétence ("C")
+const us1Lang1 = new Langue ("Anglais")
+const us1Lang2 = new Langue ("Français")
+const us1Ss1 = new softSkill("Motivé")
+const us1Ss2 = new softSkill("Curieux")
+const us1Ss3 = new softSkill("Adaptable")
+const us1Ss4 = new softSkill("Concienssieux")
 
 
 let listContact = [us1Mail.unMail, us1Address.uneAdsress, us1Tel.num,];
@@ -230,21 +200,21 @@ for (i=0; i<listContact.length; i++){
     document.getElementById("contact").appendChild(elementListe);
 }
 
-let listCompetence = [us1Compt1.compt1, us1Compt2.compt2, us1Compt3.compt3, us1Compt4.compt4]
+let listCompetence = [us1Compt1.compétence, us1Compt2.compétence, us1Compt3.compétence, us1Compt4.compétence]
 for (i=0; i<listCompetence.length; i++){
     let liste = document.createElement("li");
     liste.innerHTML = listCompetence[i];
     document.getElementById("competences").appendChild(liste)
 }
 
-let listLangage = [us1Lang1.Lang1, us1Lang2.Lang2]
+let listLangage = [us1Lang1.Lang, us1Lang2.Lang]
 for (i=0; i<listLangage.length; i++){
     let lang = document.createElement("li");
     lang.innerHTML = listLangage[i];
     document.getElementById("langage").appendChild(lang)
 }
 
-let listSS = [us1Ss1.Ss1, us1Ss2.Ss2, us1Ss3.Ss3, us1Ss4.Ss4]
+let listSS = [us1Ss1.ss, us1Ss2.ss, us1Ss3.ss, us1Ss4.ss]
 for (i=0; i<listSS.length; i++){
     let sofS = document.createElement("li");
     sofS.innerHTML = listSS[i];
@@ -290,7 +260,7 @@ document.getElementById("periode003").innerHTML = us1Periode3.periode3
 
 
 //formation
-//autre méthode class et const
+
 class nomFormation{
     constructor(nomForma){
         this.nomForma = nomForma
